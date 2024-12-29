@@ -5,9 +5,10 @@ local t = tween:Create(plr,TweenInfo.new(t),{CFrame = c})
 t:Play()
 end
 
+if game.PlaceId == 72521583116265 then
 wait(10)
 tp(CFrame.new(40,6,-47),12)
-wait(105)
+wait(125)
 plr.CFrame = workspace.Character.DA0ZA.HumanoidRootPart.CFrame
 wait(0.3)
 fireproximityprompt(workspace.Character.DA0ZA.ProximityPrompt)
@@ -63,5 +64,21 @@ wait(7)
 plr.CFrame = workspace.Character.Racoon["Meshes/RaccoonSized"].CFrame
 wait(0.3)
 fireproximityprompt(workspace.Character.Racoon.ProximityPrompt)
-wait(70)
+wait(96)
 tp(workspace.Character.SantaWHAT.HumanoidRootPart.CFrame,4)
+elseif game.PlaceId == 9233343468 then
+plr.CFrame = CFrame.new(-2010,4,214)
+fireproximityprompt(workspace.Event.SantaWHAT.ProximityPrompt)
+wait(0.5)
+local args = {
+    [1] = "Create"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args))
+wait(0.2)
+local args = {
+    [1] = "Start"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args)
+end
