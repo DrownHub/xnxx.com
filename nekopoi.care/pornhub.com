@@ -1,4 +1,4 @@
-local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+local plr = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 local tween = game:GetService("TweenService")
 local function tp(c,t)
 local t = tween:Create(plr,TweenInfo.new(t),{CFrame = c})
@@ -66,7 +66,7 @@ wait(0.3)
 fireproximityprompt(workspace.Character.Racoon.ProximityPrompt)
 wait(96)
 tp(workspace.Character.SantaWHAT.HumanoidRootPart.CFrame,4)
-wait(86)
+wait(76)
 game:GetService("TeleportService"):Teleport(9233343468)
 elseif game.PlaceId == 9233343468 then
 plr.CFrame = CFrame.new(-2010,4,214)
