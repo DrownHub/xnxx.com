@@ -1,20 +1,4 @@
 local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
-
-plr.CFrame = CFrame.new(-2010,4,214)
-fireproximityprompt(workspace.Event.SantaWHAT.ProximityPrompt)
-wait(0.5)
-local args = {
-    [1] = "Create"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args))
-wait(0.2)
-local args = {
-    [1] = "Start"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args))
-
 local tween = game:GetService("TweenService")
 local function tp(c,t)
 local t = tween:Create(plr,TweenInfo.new(t),{CFrame = c})
