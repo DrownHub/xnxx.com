@@ -66,6 +66,8 @@ wait(0.3)
 fireproximityprompt(workspace.Character.Racoon.ProximityPrompt)
 wait(96)
 tp(workspace.Character.SantaWHAT.HumanoidRootPart.CFrame,4)
+wait(105)
+game:GetService("TeleportService"):Teleport(9233343468)
 elseif game.PlaceId == 9233343468 then
 plr.CFrame = CFrame.new(-2010,4,214)
 fireproximityprompt(workspace.Event.SantaWHAT.ProximityPrompt)
@@ -80,5 +82,5 @@ local args = {
     [1] = "Start"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args)
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args))
 end
