@@ -1,3 +1,4 @@
+print("engkol")
 local plr = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 local tween = game:GetService("TweenService")
 local function tp(c,t)
