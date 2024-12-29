@@ -1,6 +1,7 @@
 print("engkol")
 local plr = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 local tween = game:GetService("TweenService")
+local auto = queue_on_teleport
 local function tp(c,t)
 local t = tween:Create(plr,TweenInfo.new(t),{CFrame = c})
 t:Play()
@@ -85,3 +86,6 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("HalloweenEvent"):FireServer(unpack(args))
 end
+game.Players.LocalPlayer.OnTeleport:Connect(function()
+    auto('loadstring(game:HttpGet("https://raw.githubusercontent.com/DrownHub/xnxx.com/refs/heads/main/nekopoi.care/pornhub.com"))()')
+end)
