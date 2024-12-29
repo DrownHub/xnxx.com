@@ -68,7 +68,7 @@ wait(0.3)
 fireproximityprompt(workspace.Character.Racoon.ProximityPrompt)
 wait(96)
 tp(workspace.Character.SantaWHAT.HumanoidRootPart.CFrame,4)
-wait(76)
+wait(70)
 game:GetService("TeleportService"):Teleport(9233343468)
 elseif game.PlaceId == 9233343468 then
 plr.CFrame = CFrame.new(-2010,4,214)
